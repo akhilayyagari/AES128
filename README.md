@@ -32,18 +32,21 @@ In this tutorial, we are using the AES128 core as an encrypter and decrypter. In
 	HOST - the host code used in this tutorial
  	AES128 IP CORE - This folder contains a tar file of the IP core.
 
-###### RTL Kernel Wizard
+### RTL Kernel Wizard
 
 1. Launch the SDx Development Environment
 2. Create Sdx Project.
 3. Run the RTL kernel Wizard, by selecting the "RTL Kernel Wizard" from the Xilinx Menu
 
-
 	1. The RTL kernel starts with a Welcome page, containg an abbreviated version of the workflow and the steps for following the wizard. Go to the next page, by pressing Next.
-    2. In the "General Settings" dialog box specify the kernel name - sdx_kernel_wizard_0, select the kernel type to be RTL, select the reset options to be 1 and let the remaining to be default. Then press Next
+       
+        2. In the "General Settings" dialog box specify the kernel name - sdx_kernel_wizard_0, select the kernel type to be RTL, select the reset options to be 1 and let the remaining to be default. Then press Next
+	
 	3. In the "Scalars" dialog box you ed to specify the scalar arguments a RTL Kernel has. FOr this tutorial, the AES128 uses '1' scalar argument. Then press Next
+	
 	4. In the "Global memory" diablog box the user needs to define how a RTL kernel will access Global Memory(off-chip memory such as DDR4). For this tutorial, the AES128 core uses '1' AXI Master Interface with argument name - axi00_ptr0.
-    5. The final dialog box("Summary") provide a summary of the generated RTL kernel includign a function prototype (The function prototype conveys what a kernel call would look like if it was a C function): Then Press OK to launch Vivado.
+    	
+	5. The final dialog box("Summary") provide a summary of the generated RTL kernel includign a function prototype (The function prototype conveys what a kernel call would look like if it was a C function): Then Press OK to launch Vivado.
 
 The wizard generates a kernel.xml file to match the software function prototype and behaviour specified in the wizard.
 
