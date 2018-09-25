@@ -13,7 +13,7 @@ This tutorial explains the procedure for integrating an exsisting RTL with the S
 	9. Conclusion.
 
 ## AES128 Design Overview
-This tutorial uses a AES128 public IP core available at https://opencores.org/project,systemcaes. The repository contains the design, testbench files for the AES128, AES192 Low area core. The Hirearchy of the design files is as shown below.
+This tutorial uses a AES128 public IP core available at https://opencores.org/project,systemcaes. The open core repository contains the design, testbench files for the AES128, AES192 Low area core. The Hirearchy of the design files is as shown below.
 
 ![](https://user-images.githubusercontent.com/32319498/38529264-abcea81c-3c18-11e8-9500-ca1cdc150b91.png)
 
