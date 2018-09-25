@@ -23,7 +23,7 @@ This AES128 IP core has dual functionality, as an encrypter and as a decrypter. 
 ## RTL KERNEL
 
 In order to generate a RTL Kernel you need two mandatory items:
-1. RTL IP (packaged by the Vivado IP Packager)
+1. RTL IP (packaged by the Vivado IP Packager) - XO file
 2. Kernel description XML file
 
 In this tutorial, we are using the AES128 core as an encrypter and decrypter. In the github repository,you will find the following files/folders:
