@@ -12,7 +12,6 @@ This tutorial explains the procedure for integrating an exsisting RTL with the S
 	8. System Run.
 	9. Conclusion.
 
-
 ## AES128 Design Overview
 This tutorial uses a AES128 public IP core available at https://opencores.org/project,systemcaes. The repository contains the design, testbench files for the AES128, AES192 Low area core. The Hirearchy of the design files is as shown below.
 
@@ -46,7 +45,9 @@ In this tutorial, we are using the AES128 core as an encrypter and decrypter. In
 
 The wizard generates a kernel.xml file to match the software function prototype and behaviour specified in the wizard.
 
-> A set of pregerated Vivado core files are available in the repository under the vivado directory. Copy these files from the repository and replace in the <project_name>/vivado_rtl_kernel/<kernel_name>/import directory.
+Once the vivdao launches, make the below changes 
+
+> A set of pregerated Vivado files are available in the repository under the vivado directory. Copy these files from the repository and replace in the "project_name"/vivado_rtl_kernel/"kernel_name"/import directory.
 > After copying the vivado files, select the add files option and load the AES128 IP Core files into the project.
 
 The block diagram of the design looks like as shown below,
@@ -66,8 +67,7 @@ The RTL kerenel wizard also provides a bult-in testbench, where you can validate
 
 ![wdata](https://user-images.githubusercontent.com/32319498/45984003-f4df8100-c013-11e8-82d8-63e7089f2d21.PNG)
 
-
-If the design is functionaly correct it will print out a message as shown in the below figure.
+Once the simulation is finished, it will print out a message as shown in the below figure.
 
 ![done](https://user-images.githubusercontent.com/32319498/45984105-5dc6f900-c014-11e8-8479-fc01a159fc97.PNG)
 
@@ -103,6 +103,7 @@ Before you can compile the application you need to go through additional steps:
 In the “HW Function” section of the “SDx Project Settings” click on the thunderbolt icon. By doing this, SDx environment scans all your source files and automatically identifies the kernels. In our case, there is only one. Select it and presss OK. A binary container with the default "binary_contianer_1" name is created.
 
 ![binary](https://user-images.githubusercontent.com/32319498/45984347-8bf90880-c015-11e8-80eb-4bef03ebba9f.PNG)
+
 
 ## Hardware emulation (HW Emulation)
 
