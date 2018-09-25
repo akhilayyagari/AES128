@@ -48,7 +48,7 @@ In this tutorial, we are using the AES128 core as an encrypter and decrypter. In
     	
 	5. The final dialog box("Summary") provide a summary of the generated RTL kernel includign a function prototype (The function prototype conveys what a kernel call would look like if it was a C function): Then Press OK to launch Vivado.
 
-The wizard generates a kernel.xml file to match the software function prototype and behaviour specified in the wizard.
+The wizard automatically generates a kernel.xml file to match the software function prototype and behaviour specified in the wizard.
 
 Once the vivdao launches, make the below changes 
 
