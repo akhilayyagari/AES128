@@ -40,7 +40,7 @@ In this tutorial, we are using the AES128 core as an encrypter and decrypter. In
 
 	1. The RTL kernel starts with a Welcome page, containg an abbreviated version of the workflow and the steps for following the wizard. Go to the next page, by pressing Next.
        
-        2. In the "General Settings" dialog box specify the kernel name - sdx_kernel_wizard_0, select the kernel type to be RTL, select the reset options to be 1 and let the remaining to be default. Then press Next
+      2. In the "General Settings" dialog box specify the kernel name - sdx_kernel_wizard_0, select the kernel type to be RTL, select the reset options to be 1 and let the remaining to be default. Then press Next
 	
 	3. In the "Scalars" dialog box you ed to specify the scalar arguments a RTL Kernel has. FOr this tutorial, the AES128 uses '1' scalar argument. Then press Next
 	
